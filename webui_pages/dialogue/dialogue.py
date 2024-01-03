@@ -106,7 +106,7 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
     if not chat_box.chat_inited:
         st.toast(
             f"欢迎使用 [`Langchain-Chatchat`](https://github.com/chatchat-space/Langchain-Chatchat) ! \n\n"
-            f"当前运行的模型`{default_model}`, 您可以开始提问了."
+            f"当前运行的模型为`{default_model}`, 您可以开始提问了."
         )
         chat_box.init_session()
 
@@ -123,7 +123,8 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
         index = 0
         if st.session_state.get("cur_conv_name") in conv_names:
             index = conv_names.index(st.session_state.get("cur_conv_name"))
-        conversation_name = st.selectbox("当前会话：", conv_names, index=index)
+        # conversation_name = st.selectbox("当前会话：", conv_names, index=index)
+        conversation_name = "default"
         chat_box.use_chat_name(conversation_name)
         conversation_id = st.session_state["conversation_ids"][conversation_name]
 
@@ -131,17 +132,21 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
         def on_mode_change():
             mode = st.session_state.dialogue_mode
             text = f"已切换到 {mode} 模式。"
-            if mode == "知识库问答":
+            # if mode == "知识库问答":
+            if mode == "数字人测试":
                 cur_kb = st.session_state.get("selected_kb")
                 if cur_kb:
                     text = f"{text} 当前知识库： `{cur_kb}`。"
             st.toast(text)
 
-        dialogue_modes = ["LLM 对话",
-                        "知识库问答",
-                        "文件对话",
-                        "搜索引擎问答",
-                        "自定义Agent问答",
+        # dialogue_modes = ["数字人训练",
+        #                 "数字人测试",
+        #                 "文件对话",
+        #                 "搜索引擎问答",
+        #                 "自定义Agent问答",
+        #                 ]
+        dialogue_modes = ["数字人训练",
+                        "数字人测试"
                         ]
         dialogue_mode = st.selectbox("请选择对话模式：",
                                      dialogue_modes,
@@ -149,7 +154,6 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
                                      on_change=on_mode_change,
                                      key="dialogue_mode",
                                      )
-
         def on_llm_change():
             if llm_model:
                 config = api.get_model_config(llm_model)
@@ -201,10 +205,10 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
                     st.session_state["prev_llm_model"] = llm_model
 
         index_prompt = {
-            "LLM 对话": "llm_chat",
+            "数字人训练": "llm_chat",
             "自定义Agent问答": "agent_chat",
             "搜索引擎问答": "search_engine_chat",
-            "知识库问答": "knowledge_base_chat",
+            "数字人测试": "knowledge_base_chat",
             "文件对话": "knowledge_base_chat",
         }
         prompt_templates_kb_list = list(PROMPT_TEMPLATES[index_prompt[dialogue_mode]].keys())
@@ -226,12 +230,12 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
         prompt_template_name = st.session_state.prompt_template_select
         temperature = st.slider("Temperature：", 0.0, 2.0, TEMPERATURE, 0.05)
         history_len = st.number_input("历史对话轮数：", 0, 20, HISTORY_LEN)
-
+        
         def on_kb_change():
             st.toast(f"已加载知识库： {st.session_state.selected_kb}")
 
-        if dialogue_mode == "知识库问答":
-            with st.expander("知识库配置", True):
+        if dialogue_mode == "数字人测试":
+            with st.expander("数字人知识库配置", True):
                 kb_list = api.list_knowledge_bases()
                 index = 0
                 if DEFAULT_KNOWLEDGE_BASE in kb_list:
@@ -301,7 +305,8 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
         else:
             history = get_messages_history(history_len)
             chat_box.user_say(prompt)
-            if dialogue_mode == "LLM 对话":
+            # if dialogue_mode == "LLM 对话":
+            if dialogue_mode == "数字人训练":
                 chat_box.ai_say("正在思考...")
                 text = ""
                 message_id = ""
@@ -366,7 +371,8 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
                         chat_box.update_msg(text, element_index=1)
                 chat_box.update_msg(ans, element_index=0, streaming=False)
                 chat_box.update_msg(text, element_index=1, streaming=False)
-            elif dialogue_mode == "知识库问答":
+            # elif dialogue_mode == "知识库问答":
+            elif dialogue_mode == "数字人测试":
                 chat_box.ai_say([
                     f"正在查询知识库 `{selected_kb}` ...",
                     Markdown("...", in_expander=True, title="知识库匹配结果", state="complete"),
