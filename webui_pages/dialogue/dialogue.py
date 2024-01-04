@@ -105,8 +105,8 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
 
     if not chat_box.chat_inited:
         st.toast(
-            f"欢迎使用 [`Langchain-Chatchat`](https://github.com/chatchat-space/Langchain-Chatchat) ! \n\n"
-            f"当前运行的模型为`{default_model}`, 您可以开始提问了."
+            f"欢迎使用忆镜测试版! \n\n"
+            f"您可以先通过数字人训练与数字人对话录入信息，然后一键导出对话内容，再选择数字人知识库管理导入对话内容，最后可以通过数字人测试进行效果评估"
         )
         chat_box.init_session()
 
