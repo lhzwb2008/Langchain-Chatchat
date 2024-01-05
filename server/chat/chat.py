@@ -56,13 +56,19 @@ async def chat(query: str = Body(..., description="用户输入", examples=["恼
             max_tokens=max_tokens,
             callbacks=callbacks,
         )
+        
+        system_msg = History(role="system", content=
+            "我需要你扮演一名记忆采集师，作为忆镜项目的工作人员,通过提问引导客户回顾自己的一生，尽可能详细的记录客户的记忆。"
+            "问题需要涵盖客户人生经历的各个阶段，并尽量收集最宝贵的记忆。你需要不断提出一些有趣的且有深度的问题，从而不断深入了解对方。"
+            "请一次只问一个问题，每当客户回答一个问题后，请对他的回复做出友好的回应和评论，然后再发起另一个新的问题，持续与之友好交流，不要过于表达自己的观点，以倾听为主"
+            ).to_msg_template(False)
 
         if history: # 优先使用前端传入的历史消息
             history = [History.from_data(h) for h in history]
             prompt_template = get_prompt_template("llm_chat", prompt_name)
             input_msg = History(role="user", content=prompt_template).to_msg_template(False)
             chat_prompt = ChatPromptTemplate.from_messages(
-                [i.to_msg_template() for i in history] + [input_msg])
+                [system_msg] + [i.to_msg_template() for i in history] + [input_msg])
         elif conversation_id and history_len > 0: # 前端要求从数据库取历史消息
             # 使用memory 时必须 prompt 必须含有memory.memory_key 对应的变量
             prompt = get_prompt_template("llm_chat", "with_history")
@@ -74,9 +80,10 @@ async def chat(query: str = Body(..., description="用户输入", examples=["恼
         else:
             prompt_template = get_prompt_template("llm_chat", prompt_name)
             input_msg = History(role="user", content=prompt_template).to_msg_template(False)
-            chat_prompt = ChatPromptTemplate.from_messages([input_msg])
+            chat_prompt = ChatPromptTemplate.from_messages([system_msg]+[input_msg])
 
         chain = LLMChain(prompt=chat_prompt, llm=model, memory=memory)
+        print(chat_prompt)
 
         # Begin a task that runs in the background.
         task = asyncio.create_task(wrap_done(

@@ -101,7 +101,7 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
     st.session_state.setdefault("conversation_ids", {})
     st.session_state["conversation_ids"].setdefault(chat_box.cur_chat_name, uuid.uuid4().hex)
     st.session_state.setdefault("file_chat_id", None)
-    default_model = api.get_default_llm_model()[0]
+    default_model = api.get_default_llm_model(local_first=False)[0]
 
     if not chat_box.chat_inited:
         st.toast(
@@ -169,15 +169,15 @@ def dialogue_page(api: ApiRequest, is_lite: bool = False):
         running_models = list(api.list_running_models())
         available_models = []
         config_models = api.list_config_models()
+        for k, v in config_models.get("online", {}).items():  # 列出ONLINE_MODELS中直接访问的模型
+            if not v.get("provider") and k not in running_models:
+                available_models.append(k)
         if not is_lite:
             for k, v in config_models.get("local", {}).items(): # 列出配置了有效本地路径的模型
                 if (v.get("model_path_exists")
                     and k not in running_models):
                     available_models.append(k)
-        for k, v in config_models.get("online", {}).items():  # 列出ONLINE_MODELS中直接访问的模型
-            if not v.get("provider") and k not in running_models:
-                available_models.append(k)
-        llm_models = running_models + available_models
+        llm_models = available_models + running_models 
         cur_llm_model = st.session_state.get("cur_llm_model", default_model)
         if cur_llm_model in llm_models:
             index = llm_models.index(cur_llm_model)
