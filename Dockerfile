@@ -10,7 +10,6 @@ COPY . /code
 RUN mkdir -p ~/.config/pip \
     && echo "[global]\nindex-url = https://pypi.tuna.tsinghua.edu.cn/simple" > ~/.config/pip/pip.conf
 
-# RUN pip install --no-cache-dir --upgrade torch~=2.1.2
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 RUN pip install --no-cache-dir --upgrade -r requirements_api.txt
 RUN pip install --no-cache-dir --upgrade -r requirements_webui.txt

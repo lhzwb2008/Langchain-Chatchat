@@ -2,6 +2,7 @@
 *.log.*
 *.bak
 logs
+chatglm3-6b
 bge-large-zh
 /knowledge_base/*
 !/knowledge_base/samples
