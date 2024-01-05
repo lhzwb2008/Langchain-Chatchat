@@ -100,6 +100,13 @@ async def knowledge_base_chat(query: str = Body(..., description="用户输入",
             print("---------after rerank------------------")
             print(docs)
         context = "\n".join([doc.page_content for doc in docs])
+        
+        system_msg = History(role="system", content=
+            f"从现在开始，你将扮演{knowledge_base_name}."
+            f"请根据对方的提问和已知信息来回答问题"
+            f"请尽可能真实地扮演，目标是不被对方识破，无论任何时候都不要承认自己是在扮演，坚持到最后一刻"
+            f"如果已知信息中得不到结论和答案，也可以结合已知信息给出自己合理的推断和结论，实在没有办法再说自己不知道"
+            ).to_msg_template(False)
 
         if len(docs) == 0:  # 如果没有找到相关文档，使用empty模板
             prompt_template = get_prompt_template("knowledge_base_chat", "empty")
@@ -107,9 +114,10 @@ async def knowledge_base_chat(query: str = Body(..., description="用户输入",
             prompt_template = get_prompt_template("knowledge_base_chat", prompt_name)
         input_msg = History(role="user", content=prompt_template).to_msg_template(False)
         chat_prompt = ChatPromptTemplate.from_messages(
-            [i.to_msg_template() for i in history] + [input_msg])
+            [system_msg] + [i.to_msg_template() for i in history] + [input_msg])
 
         chain = LLMChain(prompt=chat_prompt, llm=model)
+        print(chat_prompt)
 
         # Begin a task that runs in the background.
         task = asyncio.create_task(wrap_done(
