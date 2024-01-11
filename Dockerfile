@@ -4,7 +4,7 @@ ENV PYTHONUNBUFFERED=1
 
 RUN mkdir /code
 WORKDIR /code
-COPY . /code
+COPY . /code/
 
 # 创建 pip 配置文件，并设置清华大学 TUNA 协会的镜像源
 RUN mkdir -p ~/.config/pip \
