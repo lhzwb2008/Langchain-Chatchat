@@ -28,8 +28,8 @@ EMBEDDING_MODEL_OUTPUT_PATH = "output"
 
 # chatglm3-6b输出角色标签<|user|>及自问自答的问题详见项目wiki->常见问题->Q20.
 
-# LLM_MODELS = ["openai-api","chatglm3-6b"]
-LLM_MODELS = ["openai-api"]
+LLM_MODELS = ["openai-api","chatglm3-6b"]
+#LLM_MODELS = ["openai-api"]
 
 
 # AgentLM模型的名称 (可以不指定，指定之后就锁定进入Agent之后的Chain的模型，不指定就是LLM_MODELS[0])
