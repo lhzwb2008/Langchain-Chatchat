@@ -28,7 +28,7 @@ EMBEDDING_MODEL_OUTPUT_PATH = "output"
 
 # chatglm3-6b输出角色标签<|user|>及自问自答的问题详见项目wiki->常见问题->Q20.
 
-LLM_MODELS = ["openai-api","chatglm3-6b"]
+LLM_MODELS = ["chatglm3-6b-32k"]
 #LLM_MODELS = ["openai-api"]
 
 
