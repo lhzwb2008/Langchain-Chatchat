@@ -1,428 +1,187 @@
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-2024-02-20 13:19:02,995 - startup.py[line:651] - INFO: 正在启动服务：
-2024-02-20 13:19:02,995 - startup.py[line:652] - INFO: 如需查看 llm_api 日志，请前往 /Langchain-Chatchat/logs
-
-
-==============================Langchain-Chatchat Configuration==============================
-操作系统：Linux-4.19.0-19-amd64-x86_64-with-glibc2.31.
-python版本：3.10.12 (main, Jul  5 2023, 18:54:27) [GCC 11.2.0]
-项目版本：v0.0.1
-langchain版本：0.0.354. fastchat版本：0.2.34
-
-
-当前使用的分词器：ChineseRecursiveTextSplitter
-当前启动的LLM模型：['chatglm3-6b-32k'] @ cpu
-{'device': 'cpu',
- 'host': '0.0.0.0',
- 'infer_turbo': False,
- 'model_path': 'chatglm3-6b-32k',
- 'model_path_exists': True,
- 'port': 20002}
-当前Embbedings模型： bge-large-zh @ cpu
-==============================Langchain-Chatchat Configuration==============================
-
-
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-2024-02-20 13:19:09 | ERROR | stderr | INFO:     Started server process [1772]
-2024-02-20 13:19:09 | ERROR | stderr | INFO:     Waiting for application startup.
-2024-02-20 13:19:09 | ERROR | stderr | INFO:     Application startup complete.
-2024-02-20 13:19:09 | ERROR | stderr | INFO:     Uvicorn running on http://0.0.0.0:20000 (Press CTRL+C to quit)
-2024-02-20 13:19:10 | INFO | model_worker | Loading the model ['chatglm3-6b-32k'] on worker 4c73d053 ...
-2024-02-20 13:19:10 | ERROR | stderr | Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]
-2024-02-20 13:19:11 | ERROR | stderr | Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:05,  1.05it/s]
-2024-02-20 13:19:12 | ERROR | stderr | Loading checkpoint shards:  29%|██▊       | 2/7 [00:01<00:04,  1.00it/s]
-2024-02-20 13:19:13 | ERROR | stderr | Loading checkpoint shards:  43%|████▎     | 3/7 [00:02<00:03,  1.01it/s]
-2024-02-20 13:19:14 | ERROR | stderr | Loading checkpoint shards:  57%|█████▋    | 4/7 [00:03<00:02,  1.03it/s]
-2024-02-20 13:19:15 | ERROR | stderr | Loading checkpoint shards:  71%|███████▏  | 5/7 [00:04<00:01,  1.02it/s]
-2024-02-20 13:19:16 | ERROR | stderr | Loading checkpoint shards:  86%|████████▌ | 6/7 [00:05<00:00,  1.01it/s]
-2024-02-20 13:19:17 | ERROR | stderr | Loading checkpoint shards: 100%|██████████| 7/7 [00:06<00:00,  1.14it/s]
-2024-02-20 13:19:17 | ERROR | stderr | Loading checkpoint shards: 100%|██████████| 7/7 [00:06<00:00,  1.07it/s]
-2024-02-20 13:19:17 | ERROR | stderr | 
-2024-02-20 13:19:17 | INFO | model_worker | Register to controller
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-[nltk_data] Downloading package stopwords to
-[nltk_data]     /root/miniconda3/envs/myconda/lib/python3.10/site-
-[nltk_data]     packages/llama_index/legacy/_static/nltk_cache...
-[nltk_data]   Unzipping corpora/stopwords.zip.
-[nltk_data] Downloading package punkt to
-[nltk_data]     /root/miniconda3/envs/myconda/lib/python3.10/site-
-[nltk_data]     packages/llama_index/legacy/_static/nltk_cache...
-2024-02-20 13:34:25,831 - startup.py[line:856] - WARNING: Sending SIGKILL to {}
-2024-02-20 13:34:25,831 - startup.py[line:856] - WARNING: Sending SIGKILL to {'chatglm3-6b-32k': <Process name='model_worker - chatglm3-6b-32k (1777)' pid=1777 parent=1514 started daemon>}
-2024-02-20 13:34:25,832 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='controller (1661)' pid=1661 parent=1514 started daemon>
-2024-02-20 13:34:25,833 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='openai_api (1772)' pid=1772 parent=1514 started daemon>
-2024-02-20 13:34:25,834 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='API Server (2014)' pid=2014 parent=1514 started daemon>
-2024-02-20 13:34:25,834 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='WEBUI Server' parent=1514 initial daemon>
 Traceback (most recent call last):
-  File "/Langchain-Chatchat/startup.py", line 769, in start_main_server
-    api_started.wait() # 等待api.py启动完成
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/managers.py", line 1093, in wait
-    return self._callmethod('wait', (timeout,))
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/managers.py", line 818, in _callmethod
-    kind, result = conn.recv()
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/connection.py", line 250, in recv
-    buf = self._recv_bytes()
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/connection.py", line 414, in _recv_bytes
-    buf = self._recv(4)
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/connection.py", line 379, in _recv
-    chunk = read(handle, remaining)
-  File "/Langchain-Chatchat/startup.py", line 609, in f
-    raise KeyboardInterrupt(f"{signalname} received")
-KeyboardInterrupt: SIGTERM received
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Langchain-Chatchat/startup.py", line 883, in <module>
-    loop.run_until_complete(start_main_server())
-  File "/root/miniconda3/envs/myconda/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
-    return future.result()
-  File "/Langchain-Chatchat/startup.py", line 864, in start_main_server
-    p.kill()
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/process.py", line 140, in kill
-    self._popen.kill()
-AttributeError: 'NoneType' object has no attribute 'kill'
-/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
-  warnings.warn('resource_tracker: There appear to be %d '
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-2024-02-20 17:10:56,096 - startup.py[line:651] - INFO: 正在启动服务：
-2024-02-20 17:10:56,096 - startup.py[line:652] - INFO: 如需查看 llm_api 日志，请前往 /Langchain-Chatchat/logs
+  File "/root/Langchain-Chatchat/startup.py", line 39, in <module>
+    from server.knowledge_base.migrate import create_tables
+  File "/root/Langchain-Chatchat/server/knowledge_base/migrate.py", line 11, in <module>
+    from server.knowledge_base.kb_service.base import KBServiceFactory
+  File "/root/Langchain-Chatchat/server/knowledge_base/kb_service/base.py", line 10, in <module>
+    from server.db.repository.knowledge_base_repository import (
+  File "/root/Langchain-Chatchat/server/db/repository/__init__.py", line 1, in <module>
+    from .conversation_repository import *
+  File "/root/Langchain-Chatchat/server/db/repository/conversation_repository.py", line 1, in <module>
+    from server.db.session import with_session
+  File "/root/Langchain-Chatchat/server/db/session.py", line 3, in <module>
+    from server.db.base import SessionLocal
+  File "/root/Langchain-Chatchat/server/db/base.py", line 1, in <module>
+    from sqlalchemy import create_engine
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/sqlalchemy/__init__.py", line 13, in <module>
+    from .engine import AdaptedConnection as AdaptedConnection
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/sqlalchemy/engine/__init__.py", line 18, in <module>
+    from . import events as events
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/sqlalchemy/engine/events.py", line 19, in <module>
+    from .base import Connection
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 30, in <module>
+    from .interfaces import BindTyping
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/sqlalchemy/engine/interfaces.py", line 38, in <module>
+    from ..sql.compiler import Compiled as Compiled
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/sqlalchemy/sql/__init__.py", line 10, in <module>
+    from ._typing import ColumnExpressionArgument as ColumnExpressionArgument
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/sqlalchemy/sql/_typing.py", line 281, in <module>
+    _TypeEngineArgument = Union[Type["TypeEngine[_T]"], "TypeEngine[_T]"]
+                                ~~~~^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/typing.py", line 362, in inner
+    return cached(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/typing.py", line 1575, in __getitem__
+    params = tuple(_type_check(p, msg) for p in params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/typing.py", line 1575, in <genexpr>
+    params = tuple(_type_check(p, msg) for p in params)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/typing.py", line 186, in _type_check
+    arg = _type_convert(arg, module=module, allow_special_forms=allow_special_forms)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/typing.py", line 164, in _type_convert
+    return ForwardRef(arg, module=module, is_class=allow_special_forms)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/typing.py", line 864, in __init__
+    code = compile(arg_to_compile, '<string>', 'eval')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-03-05 15:00:49,288 - startup.py[line:651] - INFO: 正在启动服务：
+2024-03-05 15:00:49,288 - startup.py[line:652] - INFO: 如需查看 llm_api 日志，请前往 /root/Langchain-Chatchat/logs
 
 
 ==============================Langchain-Chatchat Configuration==============================
-操作系统：Linux-4.19.0-19-amd64-x86_64-with-glibc2.31.
+操作系统：Linux-4.19.0-14-amd64-x86_64-with-glibc2.31.
 python版本：3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]
 项目版本：v0.0.1
-langchain版本：0.0.354. fastchat版本：0.2.34
+langchain版本：0.0.354. fastchat版本：0.2.35
 
 
 当前使用的分词器：ChineseRecursiveTextSplitter
-当前启动的LLM模型：['openai-api'] @ cpu
-{'api_base_url': 'https://openai.api2d.net/v1',
- 'api_key': 'fk188001-GnJvP95mbkvBsSojfH1OyltDIAdef8YV',
- 'device': 'auto',
+当前启动的LLM模型：['chatglm3-6b'] @ cuda
+{'device': 'cuda',
  'host': '0.0.0.0',
  'infer_turbo': False,
- 'model_name': 'gpt-3.5-turbo',
- 'online_api': True,
- 'openai_proxy': '',
+ 'model_path': 'chatglm3-6b',
+ 'model_path_exists': True,
  'port': 20002}
-当前Embbedings模型： bge-large-zh @ cpu
+当前Embbedings模型： bge-large-zh @ cuda
 ==============================Langchain-Chatchat Configuration==============================
 
 
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-2024-02-20 17:11:01 | ERROR | stderr | INFO:     Started server process [22712]
-2024-02-20 17:11:01 | ERROR | stderr | INFO:     Waiting for application startup.
-2024-02-20 17:11:01 | ERROR | stderr | INFO:     Application startup complete.
-2024-02-20 17:11:01 | ERROR | stderr | INFO:     Uvicorn running on http://0.0.0.0:20000 (Press CTRL+C to quit)
-[nltk_data] Downloading package punkt to
-[nltk_data]     /root/miniconda3/envs/yijing/lib/python3.11/site-
-[nltk_data]     packages/llama_index/legacy/_static/nltk_cache...
-[nltk_data]   Unzipping tokenizers/punkt.zip.
-INFO:     Started server process [22713]
+2024-03-05 15:00:54 | ERROR | stderr | INFO:     Started server process [41976]
+2024-03-05 15:00:54 | ERROR | stderr | INFO:     Waiting for application startup.
+2024-03-05 15:00:54 | ERROR | stderr | INFO:     Application startup complete.
+2024-03-05 15:00:54 | ERROR | stderr | INFO:     Uvicorn running on http://0.0.0.0:20000 (Press CTRL+C to quit)
+2024-03-05 15:00:54 | INFO | model_worker | Loading the model ['chatglm3-6b'] on worker a69163e3 ...
+2024-03-05 15:00:54 | WARNING | transformers_modules.THUDM.chatglm3-6b.9addbe01105ca1939dd60a0e5866a1812be9daea.tokenization_chatglm | Setting eos_token is not supported, use the default one.
+2024-03-05 15:00:54 | WARNING | transformers_modules.THUDM.chatglm3-6b.9addbe01105ca1939dd60a0e5866a1812be9daea.tokenization_chatglm | Setting pad_token is not supported, use the default one.
+2024-03-05 15:00:54 | WARNING | transformers_modules.THUDM.chatglm3-6b.9addbe01105ca1939dd60a0e5866a1812be9daea.tokenization_chatglm | Setting unk_token is not supported, use the default one.
+2024-03-05 15:00:55 | ERROR | stderr | Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]
+2024-03-05 15:00:56 | ERROR | stderr | Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:04,  1.35it/s]
+2024-03-05 15:00:56 | ERROR | stderr | Loading checkpoint shards:  29%|██▊       | 2/7 [00:01<00:03,  1.29it/s]
+2024-03-05 15:00:57 | ERROR | stderr | Loading checkpoint shards:  43%|████▎     | 3/7 [00:02<00:03,  1.29it/s]
+2024-03-05 15:00:58 | ERROR | stderr | Loading checkpoint shards:  57%|█████▋    | 4/7 [00:03<00:02,  1.31it/s]
+2024-03-05 15:00:59 | ERROR | stderr | Loading checkpoint shards:  71%|███████▏  | 5/7 [00:03<00:01,  1.28it/s]
+2024-03-05 15:00:59 | ERROR | stderr | Loading checkpoint shards:  86%|████████▌ | 6/7 [00:04<00:00,  1.28it/s]
+2024-03-05 15:01:00 | ERROR | stderr | Loading checkpoint shards: 100%|██████████| 7/7 [00:05<00:00,  1.47it/s]
+2024-03-05 15:01:00 | ERROR | stderr | Loading checkpoint shards: 100%|██████████| 7/7 [00:05<00:00,  1.36it/s]
+2024-03-05 15:01:00 | ERROR | stderr | 
+2024-03-05 15:01:04 | INFO | model_worker | Register to controller
+INFO:     Started server process [42273]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:7861 (Press CTRL+C to quit)
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
 
 Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
 
-
-  You can now view your Streamlit app in your browser.
-
-  URL: http://0.0.0.0:8501
-
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-2024-02-20 17:48:43,659 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50098 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:48:43,663 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-20 17:48:43,819 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50098 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:48:43,822 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50098 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-20 17:48:43,849 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-20 17:48:54,003 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50200 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:48:54,006 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-20 17:48:54,059 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50200 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:48:54,062 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50200 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-20 17:48:54,082 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50200 - "POST /llm_model/get_model_config HTTP/1.1" 200 OK
-2024-02-20 17:48:57,040 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/get_model_config "HTTP/1.1 200 OK"
-2024-02-20 17:48:57,131 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50220 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:48:57,134 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-20 17:48:57,170 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50220 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:48:57,172 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50220 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-20 17:48:57,189 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-20 17:49:04,475 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50246 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:49:04,478 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-20 17:49:04,526 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50246 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:49:04,528 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50246 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-20 17:49:04,560 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50246 - "POST /llm_model/get_model_config HTTP/1.1" 200 OK
-2024-02-20 17:49:05,589 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/get_model_config "HTTP/1.1 200 OK"
-2024-02-20 17:49:05,709 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50256 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:49:05,710 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-20 17:49:05,755 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50256 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:49:05,757 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50256 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-20 17:49:05,778 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50256 - "POST /llm_model/get_model_config HTTP/1.1" 200 OK
-2024-02-20 17:49:06,913 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/get_model_config "HTTP/1.1 200 OK"
-2024-02-20 17:49:07,016 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50264 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:49:07,019 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-20 17:49:07,069 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50264 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:49:07,071 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50264 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-20 17:49:07,089 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-20 17:49:09,872 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50320 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:49:09,874 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-20 17:49:09,920 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50320 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-20 17:49:09,922 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:50320 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-20 17:49:09,942 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 00:02:05,847 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56258 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 00:02:05,850 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 00:02:06,006 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56258 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 00:02:06,008 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56258 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 00:02:06,030 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56336 - "POST /llm_model/get_model_config HTTP/1.1" 200 OK
-2024-02-21 00:02:15,683 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/get_model_config "HTTP/1.1 200 OK"
-2024-02-21 00:02:15,783 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56338 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 00:02:15,786 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 00:02:15,833 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56338 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 00:02:15,849 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56338 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 00:02:15,869 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 00:02:29,788 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56392 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 00:02:29,791 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 00:02:29,858 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56392 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 00:02:29,859 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56392 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 00:02:29,877 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 00:02:38,544 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56422 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 00:02:38,545 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 00:02:38,576 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56422 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 00:02:38,578 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56422 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 00:02:38,593 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:56422 - "POST /chat/chat HTTP/1.1" 200 OK
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: The class `langchain_community.chat_models.openai.ChatOpenAI` was deprecated in langchain-community 0.0.10 and will be removed in 0.2.0. An updated version of the class exists in the langchain-openai package and should be used instead. To use it run `pip install -U langchain-openai` and import as `from langchain_openai import ChatOpenAI`.
-  warn_deprecated(
-2024-02-21 00:02:38,767 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/chat/chat "HTTP/1.1 200 OK"
-2024-02-21 00:02:38 | INFO | stdout | INFO:     127.0.0.1:44328 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
-2024-02-21 00:02:38,800 - _client.py[line:1729] - INFO: HTTP Request: POST http://127.0.0.1:20000/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2024-02-21 00:02:38,802 - utils.py[line:24] - ERROR: Error code: 400 - {'object': 'error', 'message': 'Only  allowed now, your model chatglm3-6b-32k', 'code': 40301}
 Traceback (most recent call last):
-  File "/Langchain-Chatchat/server/utils.py", line 22, in wrap_done
-    await fn
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain/chains/base.py", line 385, in acall
-    raise e
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain/chains/base.py", line 379, in acall
-    await self._acall(inputs, run_manager=run_manager)
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain/chains/llm.py", line 275, in _acall
-    response = await self.agenerate([inputs], run_manager=run_manager)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain/chains/llm.py", line 142, in agenerate
-    return await self.llm.agenerate_prompt(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 554, in agenerate_prompt
-    return await self.agenerate(
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 514, in agenerate
-    raise exceptions[0]
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 617, in _agenerate_with_cache
-    return await self._agenerate(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_community/chat_models/openai.py", line 522, in _agenerate
-    return await agenerate_from_stream(stream_iter)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 87, in agenerate_from_stream
-    async for chunk in stream:
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_community/chat_models/openai.py", line 488, in _astream
-    async for chunk in await acompletion_with_retry(
-                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_community/chat_models/openai.py", line 105, in acompletion_with_retry
-    return await llm.async_client.create(**kwargs)
+  File "/root/miniconda3/envs/yijing/bin/streamlit", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 1295, in create
-    return await self._post(
-           ^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/openai/_base_client.py", line 1536, in post
-    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/openai/_base_client.py", line 1315, in request
-    return await self._request(
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/openai/_base_client.py", line 1392, in _request
-    raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'object': 'error', 'message': 'Only  allowed now, your model chatglm3-6b-32k', 'code': 40301}
-2024-02-21 00:02:38,805 - utils.py[line:27] - ERROR: BadRequestError: Caught exception: Error code: 400 - {'object': 'error', 'message': 'Only  allowed now, your model chatglm3-6b-32k', 'code': 40301}
-2024-02-21 01:01:30,223 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-input_variables=['input'] messages=[ChatMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], template='我需要你扮演一名记忆采集师，作为忆镜项目的工作人员,通过提问引导客户回顾自己的一生，尽可能详细的记录客户的记忆。可以先引导客户做一次基本信息介绍，补全姓名、年纪、家乡情况、家庭情况、学校、工作等基本信息，可以逐步引导完成问题需要涵盖客户人生经历的各个阶段，并尽量收集最宝贵的记忆。你需要不断提出一些有趣的且有深度的问题，从而不断深入了解对方。请一次只问一个问题，每当客户回答一个问题后，请对他的回复做出友好的回应和评论，然后再发起另一个新的问题，持续与之友好交流，不要过于表达自己的观点，以倾听为主在任何时候请专注于扮演自己的角色，永远不要透露出自己是人工智能', template_format='jinja2'), role='system'), ChatMessagePromptTemplate(prompt=PromptTemplate(input_variables=['input'], template='{{ input }}', template_format='jinja2'), role='user')]
-INFO:     127.0.0.1:41764 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 01:01:30,225 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 01:01:30,397 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41764 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 01:01:30,399 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41764 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 01:01:30,419 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 01:01:37,100 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41792 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 01:01:37,101 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 01:01:37,147 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41792 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 01:01:37,148 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41792 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 01:01:37,169 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41792 - "POST /chat/chat HTTP/1.1" 200 OK
-2024-02-21 01:01:37,286 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/chat/chat "HTTP/1.1 200 OK"
-2024-02-21 01:01:39,768 - _client.py[line:1729] - INFO: HTTP Request: POST https://openai.api2d.net/v1/chat/completions "HTTP/1.1 200 OK"
-input_variables=['input'] messages=[ChatMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], template='我需要你扮演一名记忆采集师，作为忆镜项目的工作人员,通过提问引导客户回顾自己的一生，尽可能详细的记录客户的记忆。可以先引导客户做一次基本信息介绍，补全姓名、年纪、家乡情况、家庭情况、学校、工作等基本信息，可以逐步引导完成问题需要涵盖客户人生经历的各个阶段，并尽量收集最宝贵的记忆。你需要不断提出一些有趣的且有深度的问题，从而不断深入了解对方。请一次只问一个问题，每当客户回答一个问题后，请对他的回复做出友好的回应和评论，然后再发起另一个新的问题，持续与之友好交流，不要过于表达自己的观点，以倾听为主在任何时候请专注于扮演自己的角色，永远不要透露出自己是人工智能', template_format='jinja2'), role='system'), ChatMessagePromptTemplate(prompt=PromptTemplate(input_variables=['input'], template='{{ input }}', template_format='jinja2'), role='user')]
-INFO:     127.0.0.1:41792 - "POST /llm_model/get_model_config HTTP/1.1" 200 OK
-2024-02-21 01:01:41,701 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/get_model_config "HTTP/1.1 200 OK"
-2024-02-21 01:01:41,800 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41802 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 01:01:41,803 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 01:01:41,848 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41802 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 01:01:41,850 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41802 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 01:01:41,872 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 01:01:45,542 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41822 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 01:01:45,544 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 01:01:45,589 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41822 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 01:01:45,591 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41822 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 01:01:45,611 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:41822 - "POST /chat/chat HTTP/1.1" 200 OK
-2024-02-21 01:01:45,737 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/chat/chat "HTTP/1.1 200 OK"
-2024-02-21 01:01:45 | INFO | stdout | INFO:     127.0.0.1:57964 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
-2024-02-21 01:01:45,756 - _client.py[line:1729] - INFO: HTTP Request: POST http://127.0.0.1:20000/v1/chat/completions "HTTP/1.1 400 Bad Request"
-2024-02-21 01:01:45,758 - utils.py[line:24] - ERROR: Error code: 400 - {'object': 'error', 'message': 'Only  allowed now, your model chatglm3-6b-32k', 'code': 40301}
-Traceback (most recent call last):
-  File "/Langchain-Chatchat/server/utils.py", line 22, in wrap_done
-    await fn
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain/chains/base.py", line 385, in acall
-    raise e
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain/chains/base.py", line 379, in acall
-    await self._acall(inputs, run_manager=run_manager)
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain/chains/llm.py", line 275, in _acall
-    response = await self.agenerate([inputs], run_manager=run_manager)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain/chains/llm.py", line 142, in agenerate
-    return await self.llm.agenerate_prompt(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 554, in agenerate_prompt
-    return await self.agenerate(
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 514, in agenerate
-    raise exceptions[0]
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 617, in _agenerate_with_cache
-    return await self._agenerate(
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_community/chat_models/openai.py", line 522, in _agenerate
-    return await agenerate_from_stream(stream_iter)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 87, in agenerate_from_stream
-    async for chunk in stream:
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_community/chat_models/openai.py", line 488, in _astream
-    async for chunk in await acompletion_with_retry(
-                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_community/chat_models/openai.py", line 105, in acompletion_with_retry
-    return await llm.async_client.create(**kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/openai/resources/chat/completions.py", line 1295, in create
-    return await self._post(
-           ^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/openai/_base_client.py", line 1536, in post
-    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/openai/_base_client.py", line 1315, in request
-    return await self._request(
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/openai/_base_client.py", line 1392, in _request
-    raise self._make_status_error_from_response(err.response) from None
-openai.BadRequestError: Error code: 400 - {'object': 'error', 'message': 'Only  allowed now, your model chatglm3-6b-32k', 'code': 40301}
-2024-02-21 01:01:45,759 - utils.py[line:27] - ERROR: BadRequestError: Caught exception: Error code: 400 - {'object': 'error', 'message': 'Only  allowed now, your model chatglm3-6b-32k', 'code': 40301}
-2024-02-21 01:12:04,565 - startup.py[line:856] - WARNING: Sending SIGKILL to {}
-2024-02-21 01:12:04,565 - startup.py[line:856] - WARNING: Sending SIGKILL to {}
-2024-02-21 01:12:04,565 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='controller (22597)' pid=22597 parent=22453 started daemon>
-2024-02-21 01:12:04,566 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='openai_api (22712)' pid=22712 parent=22453 started daemon>
-2024-02-21 01:12:04,566 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='API Server (22713)' pid=22713 parent=22453 started daemon>
-2024-02-21 01:12:04,567 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='WEBUI Server (23686)' pid=23686 parent=22453 started daemon>
-2024-02-21 01:12:04,567 - startup.py[line:867] - INFO: Process status: {}
-2024-02-21 01:12:04,567 - startup.py[line:867] - INFO: Process status: {}
-2024-02-21 01:12:04,567 - startup.py[line:867] - INFO: Process status: <Process name='controller (22597)' pid=22597 parent=22453 started daemon>
-2024-02-21 01:12:04,567 - startup.py[line:867] - INFO: Process status: <Process name='openai_api (22712)' pid=22712 parent=22453 started daemon>
-2024-02-21 01:12:04,568 - startup.py[line:867] - INFO: Process status: <Process name='API Server (22713)' pid=22713 parent=22453 started daemon>
-2024-02-21 01:12:04,568 - startup.py[line:867] - INFO: Process status: <Process name='WEBUI Server (23686)' pid=23686 parent=22453 started daemon>
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/web/cli.py", line 233, in main_run
+    _main_run(target, args, flag_options=kwargs)
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/web/cli.py", line 269, in _main_run
+    bootstrap.run(file, is_hello, args, flag_options)
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/web/bootstrap.py", line 411, in run
+    _install_pages_watcher(main_script_path)
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/web/bootstrap.py", line 386, in _install_pages_watcher
+    watch_dir(
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/watcher/path_watcher.py", line 153, in watch_dir
+    return _watch_path(
+           ^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/watcher/path_watcher.py", line 128, in _watch_path
+    watcher_class(
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 92, in __init__
+    path_watcher.watch_path(
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/watcher/event_based_path_watcher.py", line 170, in watch_path
+    folder_handler.watch = self._observer.schedule(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/watchdog/observers/api.py", line 301, in schedule
+    emitter.start()
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/watchdog/utils/__init__.py", line 92, in start
+    self.on_thread_start()
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+    self._inotify = InotifyBuffer(path, self.watch.is_recursive)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/watchdog/observers/inotify_buffer.py", line 37, in __init__
+    self._inotify = Inotify(path, recursive)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/watchdog/observers/inotify_c.py", line 179, in __init__
+    self._add_dir_watch(path, recursive, event_mask)
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/watchdog/observers/inotify_c.py", line 395, in _add_dir_watch
+    self._add_watch(path, mask)
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/watchdog/observers/inotify_c.py", line 416, in _add_watch
+    Inotify._raise_error()
+  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/watchdog/observers/inotify_c.py", line 428, in _raise_error
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+OSError: [Errno 28] inotify watch limit reached
+2024-03-05 15:03:57,988 - startup.py[line:856] - WARNING: Sending SIGKILL to {}
+2024-03-05 15:03:57,988 - startup.py[line:856] - WARNING: Sending SIGKILL to {'chatglm3-6b': <Process name='model_worker - chatglm3-6b (41977)' pid=41977 parent=41673 started daemon>}
+2024-03-05 15:03:57,988 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='controller (41842)' pid=41842 parent=41673 started daemon>
+2024-03-05 15:03:57,989 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='openai_api (41976)' pid=41976 parent=41673 started daemon>
+2024-03-05 15:03:57,990 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='API Server (42273)' pid=42273 parent=41673 started daemon>
+2024-03-05 15:03:57,990 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='WEBUI Server (42430)' pid=42430 parent=41673 stopped exitcode=0 daemon>
+2024-03-05 15:03:57,990 - startup.py[line:867] - INFO: Process status: {}
+2024-03-05 15:03:57,990 - startup.py[line:867] - INFO: Process status: {'chatglm3-6b': <Process name='model_worker - chatglm3-6b (41977)' pid=41977 parent=41673 started daemon>}
+2024-03-05 15:03:57,990 - startup.py[line:867] - INFO: Process status: <Process name='controller (41842)' pid=41842 parent=41673 started daemon>
+2024-03-05 15:03:57,990 - startup.py[line:867] - INFO: Process status: <Process name='openai_api (41976)' pid=41976 parent=41673 started daemon>
+2024-03-05 15:03:57,990 - startup.py[line:867] - INFO: Process status: <Process name='API Server (42273)' pid=42273 parent=41673 started daemon>
+2024-03-05 15:03:57,990 - startup.py[line:867] - INFO: Process status: <Process name='WEBUI Server (42430)' pid=42430 parent=41673 stopped exitcode=0 daemon>
 
 
 ==============================Langchain-Chatchat Configuration==============================
-操作系统：Linux-4.19.0-19-amd64-x86_64-with-glibc2.31.
+操作系统：Linux-4.19.0-14-amd64-x86_64-with-glibc2.31.
 python版本：3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]
 项目版本：v0.0.1
-langchain版本：0.0.354. fastchat版本：0.2.34
+langchain版本：0.0.354. fastchat版本：0.2.35
 
 
 当前使用的分词器：ChineseRecursiveTextSplitter
-当前启动的LLM模型：['openai-api'] @ cpu
-{'api_base_url': 'https://openai.api2d.net/v1',
- 'api_key': 'fk188001-GnJvP95mbkvBsSojfH1OyltDIAdef8YV',
- 'device': 'auto',
+当前启动的LLM模型：['chatglm3-6b'] @ cuda
+{'device': 'cuda',
  'host': '0.0.0.0',
  'infer_turbo': False,
- 'model_name': 'gpt-3.5-turbo',
- 'online_api': True,
- 'openai_proxy': '',
+ 'model_path': 'chatglm3-6b',
+ 'model_path_exists': True,
  'port': 20002}
-当前Embbedings模型： bge-large-zh @ cpu
+当前Embbedings模型： bge-large-zh @ cuda
 
 
 服务端运行信息：
@@ -433,7 +192,7 @@ langchain版本：0.0.354. fastchat版本：0.2.34
 
 
 Traceback (most recent call last):
-  File "/Langchain-Chatchat/startup.py", line 883, in <module>
+  File "/root/Langchain-Chatchat/startup.py", line 883, in <module>
     loop.run_until_complete(start_main_server())
   File "/root/miniconda3/envs/yijing/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
     self.run_forever()
@@ -443,7 +202,7 @@ Traceback (most recent call last):
     handle._run()
   File "/root/miniconda3/envs/yijing/lib/python3.11/asyncio/events.py", line 80, in _run
     self._context.run(self._callback, *self._args)
-  File "/Langchain-Chatchat/startup.py", line 779, in start_main_server
+  File "/root/Langchain-Chatchat/startup.py", line 779, in start_main_server
     cmd = queue.get() # 收到切换模型的消息
           ^^^^^^^^^^^
   File "<string>", line 2, in get
@@ -459,516 +218,8 @@ Traceback (most recent call last):
   File "/root/miniconda3/envs/yijing/lib/python3.11/multiprocessing/connection.py", line 395, in _recv
     chunk = read(handle, remaining)
             ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Langchain-Chatchat/startup.py", line 609, in f
+  File "/root/Langchain-Chatchat/startup.py", line 609, in f
     raise KeyboardInterrupt(f"{signalname} received")
 KeyboardInterrupt: SIGTERM received
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-2024-02-21 01:12:20,204 - startup.py[line:651] - INFO: 正在启动服务：
-2024-02-21 01:12:20,204 - startup.py[line:652] - INFO: 如需查看 llm_api 日志，请前往 /Langchain-Chatchat/logs
-
-
-==============================Langchain-Chatchat Configuration==============================
-操作系统：Linux-4.19.0-19-amd64-x86_64-with-glibc2.31.
-python版本：3.10.12 (main, Jul  5 2023, 18:54:27) [GCC 11.2.0]
-项目版本：v0.0.1
-langchain版本：0.0.354. fastchat版本：0.2.34
-
-
-当前使用的分词器：ChineseRecursiveTextSplitter
-当前启动的LLM模型：['openai-api'] @ cpu
-{'api_base_url': 'https://openai.api2d.net/v1',
- 'api_key': 'fk188001-GnJvP95mbkvBsSojfH1OyltDIAdef8YV',
- 'device': 'auto',
- 'host': '0.0.0.0',
- 'infer_turbo': False,
- 'model_name': 'gpt-3.5-turbo',
- 'online_api': True,
- 'openai_proxy': '',
- 'port': 20002}
-当前Embbedings模型： bge-large-zh @ cpu
-==============================Langchain-Chatchat Configuration==============================
-
-
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/myconda/lib/python3.10/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-2024-02-21 01:12:26 | ERROR | stderr | INFO:     Started server process [24474]
-2024-02-21 01:12:26 | ERROR | stderr | INFO:     Waiting for application startup.
-2024-02-21 01:12:26 | ERROR | stderr | INFO:     Application startup complete.
-2024-02-21 01:12:26 | ERROR | stderr | INFO:     Uvicorn running on http://0.0.0.0:20000 (Press CTRL+C to quit)
-Process API Server:
-Traceback (most recent call last):
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
-    self.run()
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/process.py", line 108, in run
-    self._target(*self._args, **self._kwargs)
-  File "/Langchain-Chatchat/startup.py", line 436, in run_api_server
-    app = create_app(run_mode=run_mode)
-  File "/Langchain-Chatchat/server/api.py", line 51, in create_app
-    mount_app_routes(app, run_mode=run_mode)
-  File "/Langchain-Chatchat/server/api.py", line 77, in mount_app_routes
-    mount_knowledge_routes(app)
-  File "/Langchain-Chatchat/server/api.py", line 142, in mount_knowledge_routes
-    from server.chat.agent_chat import agent_chat
-  File "/Langchain-Chatchat/server/chat/agent_chat.py", line 4, in <module>
-    from server.agent.tools_select import tools, tool_names
-  File "/Langchain-Chatchat/server/agent/tools_select.py", line 7, in <module>
-    Tool.from_function(
-  File "/root/miniconda3/envs/myconda/lib/python3.10/site-packages/langchain_core/tools.py", line 624, in from_function
-    return cls(
-  File "/root/miniconda3/envs/myconda/lib/python3.10/site-packages/langchain_core/tools.py", line 604, in __init__
-    super(Tool, self).__init__(
-  File "/root/miniconda3/envs/myconda/lib/python3.10/site-packages/langchain_core/load/serializable.py", line 107, in __init__
-    super().__init__(**kwargs)
-  File "/root/miniconda3/envs/myconda/lib/python3.10/site-packages/pydantic/v1/main.py", line 341, in __init__
-    raise validation_error
-pydantic.v1.error_wrappers.ValidationError: 1 validation error for Tool
-args_schema
-  subclass of BaseModel expected (type=type_error.subclass; expected_class=BaseModel)
-2024-02-21 01:18:14,978 - startup.py[line:856] - WARNING: Sending SIGKILL to {}
-2024-02-21 01:18:14,978 - startup.py[line:856] - WARNING: Sending SIGKILL to {}
-2024-02-21 01:18:14,979 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='controller (24359)' pid=24359 parent=24214 started daemon>
-2024-02-21 01:18:14,980 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='openai_api (24474)' pid=24474 parent=24214 started daemon>
-2024-02-21 01:18:14,980 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='API Server (24475)' pid=24475 parent=24214 stopped exitcode=1 daemon>
-2024-02-21 01:18:14,981 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='WEBUI Server' parent=24214 initial daemon>
-Traceback (most recent call last):
-  File "/Langchain-Chatchat/startup.py", line 769, in start_main_server
-    api_started.wait() # 等待api.py启动完成
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/managers.py", line 1093, in wait
-    return self._callmethod('wait', (timeout,))
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/managers.py", line 818, in _callmethod
-    kind, result = conn.recv()
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/connection.py", line 250, in recv
-    buf = self._recv_bytes()
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/connection.py", line 414, in _recv_bytes
-    buf = self._recv(4)
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/connection.py", line 379, in _recv
-    chunk = read(handle, remaining)
-  File "/Langchain-Chatchat/startup.py", line 609, in f
-    raise KeyboardInterrupt(f"{signalname} received")
-KeyboardInterrupt: SIGTERM received
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Langchain-Chatchat/startup.py", line 883, in <module>
-    loop.run_until_complete(start_main_server())
-  File "/root/miniconda3/envs/myconda/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
-    return future.result()
-  File "/Langchain-Chatchat/startup.py", line 864, in start_main_server
-    p.kill()
-  File "/root/miniconda3/envs/myconda/lib/python3.10/multiprocessing/process.py", line 140, in kill
-    self._popen.kill()
-AttributeError: 'NoneType' object has no attribute 'kill'
-  Stopping...
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-2024-02-21 02:57:34,793 - startup.py[line:651] - INFO: 正在启动服务：
-2024-02-21 02:57:34,793 - startup.py[line:652] - INFO: 如需查看 llm_api 日志，请前往 /Langchain-Chatchat/logs
-
-
-==============================Langchain-Chatchat Configuration==============================
-操作系统：Linux-4.19.0-19-amd64-x86_64-with-glibc2.31.
-python版本：3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]
-项目版本：v0.0.1
-langchain版本：0.0.354. fastchat版本：0.2.34
-
-
-当前使用的分词器：ChineseRecursiveTextSplitter
-当前启动的LLM模型：['chatglm3-6b-32k'] @ cpu
-{'device': 'cpu',
- 'host': '0.0.0.0',
- 'infer_turbo': False,
- 'model_path': 'chatglm3-6b-32k',
- 'model_path_exists': True,
- 'port': 20002}
-当前Embbedings模型： bge-large-zh @ cpu
-==============================Langchain-Chatchat Configuration==============================
-
-
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-2024-02-21 02:57:41 | ERROR | stderr | INFO:     Started server process [28281]
-2024-02-21 02:57:41 | ERROR | stderr | INFO:     Waiting for application startup.
-2024-02-21 02:57:41 | ERROR | stderr | INFO:     Application startup complete.
-2024-02-21 02:57:41 | ERROR | stderr | INFO:     Uvicorn running on http://0.0.0.0:20000 (Press CTRL+C to quit)
-2024-02-21 02:57:41 | INFO | model_worker | Loading the model ['chatglm3-6b-32k'] on worker a63f7034 ...
-2024-02-21 02:57:42 | ERROR | stderr | Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]
-2024-02-21 02:57:43 | ERROR | stderr | Loading checkpoint shards:  14%|█▍        | 1/7 [00:00<00:05,  1.04it/s]
-2024-02-21 02:57:44 | ERROR | stderr | Loading checkpoint shards:  29%|██▊       | 2/7 [00:01<00:04,  1.01it/s]
-2024-02-21 02:57:45 | ERROR | stderr | Loading checkpoint shards:  43%|████▎     | 3/7 [00:02<00:03,  1.01it/s]
-2024-02-21 02:57:45 | ERROR | stderr | Loading checkpoint shards:  57%|█████▋    | 4/7 [00:03<00:02,  1.05it/s]
-2024-02-21 02:57:46 | ERROR | stderr | Loading checkpoint shards:  71%|███████▏  | 5/7 [00:04<00:01,  1.02it/s]
-2024-02-21 02:57:47 | ERROR | stderr | Loading checkpoint shards:  86%|████████▌ | 6/7 [00:05<00:00,  1.03it/s]
-2024-02-21 02:57:48 | ERROR | stderr | Loading checkpoint shards: 100%|██████████| 7/7 [00:06<00:00,  1.16it/s]
-2024-02-21 02:57:48 | ERROR | stderr | Loading checkpoint shards: 100%|██████████| 7/7 [00:06<00:00,  1.08it/s]
-2024-02-21 02:57:48 | ERROR | stderr | 
-2024-02-21 02:57:48 | INFO | model_worker | Register to controller
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-INFO:     Started server process [28519]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://0.0.0.0:7861 (Press CTRL+C to quit)
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-
-Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
-
-
-  You can now view your Streamlit app in your browser.
-
-  URL: http://0.0.0.0:8501
-
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
-  return torch._C._cuda_getDeviceCount() > 0
-2024-02-21 02:58:06,316 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43054 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:06,319 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:06,474 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43054 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:06,476 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43054 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 02:58:06,500 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:12,010 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43110 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:12,013 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:12,059 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43110 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:12,062 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43110 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 02:58:12,082 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43110 - "POST /chat/chat HTTP/1.1" 200 OK
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: The class `langchain_community.chat_models.openai.ChatOpenAI` was deprecated in langchain-community 0.0.10 and will be removed in 0.2.0. An updated version of the class exists in the langchain-openai package and should be used instead. To use it run `pip install -U langchain-openai` and import as `from langchain_openai import ChatOpenAI`.
-  warn_deprecated(
-2024-02-21 02:58:12,238 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/chat/chat "HTTP/1.1 200 OK"
-2024-02-21 02:58:12 | INFO | stdout | INFO:     127.0.0.1:59250 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-2024-02-21 02:58:12,321 - _client.py[line:1729] - INFO: HTTP Request: POST http://127.0.0.1:20000/v1/chat/completions "HTTP/1.1 200 OK"
-2024-02-21 02:58:12 | INFO | httpx | HTTP Request: POST http://127.0.0.1:20002/worker_generate_stream "HTTP/1.1 200 OK"
-2024-02-21 02:58:21,093 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-input_variables=['input'] messages=[ChatMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], template='我需要你扮演一名记忆采集师，作为忆镜项目的工作人员,通过提问引导客户回顾自己的一生，尽可能详细的记录客户的记忆。可以先引导客户做一次基本信息介绍，补全姓名、年纪、家乡情况、家庭情况、学校、工作等基本信息，可以逐步引导完成问题需要涵盖客户人生经历的各个阶段，并尽量收集最宝贵的记忆。你需要不断提出一些有趣的且有深度的问题，从而不断深入了解对方。请一次只问一个问题，每当客户回答一个问题后，请对他的回复做出友好的回应和评论，然后再发起另一个新的问题，持续与之友好交流，不要过于表达自己的观点，以倾听为主在任何时候请专注于扮演自己的角色，永远不要透露出自己是人工智能', template_format='jinja2'), role='system'), ChatMessagePromptTemplate(prompt=PromptTemplate(input_variables=['input'], template='{{ input }}', template_format='jinja2'), role='user')]
-INFO:     127.0.0.1:43174 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:21,095 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:21,127 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43174 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:21,129 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43174 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 02:58:21,145 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43174 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 02:58:21,154 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-2024-02-21 02:58:25,839 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43188 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:25,841 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:25,874 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43188 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:25,876 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43188 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 02:58:25,891 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43188 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 02:58:25,897 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-2024-02-21 02:58:26,887 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43196 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:26,890 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:26,930 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43196 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:26,932 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43196 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 02:58:26,945 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43196 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 02:58:26,954 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-2024-02-21 02:58:36,742 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43278 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:36,744 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:36,788 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43278 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:36,791 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43278 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 02:58:36,812 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:40,673 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43288 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:40,676 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:40,720 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43288 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:40,722 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43288 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 02:58:40,742 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:42,166 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43294 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:42,168 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 02:58:42,214 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43294 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:58:42,217 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43294 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 02:58:42,237 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43294 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 02:58:42,250 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-2024-02-21 02:59:32,352 - faiss_cache.py[line:94] - INFO: loading vector store in '测试数据库/vector_store/bge-large-zh' from disk.
-2024-02-21 02:59:32,353 - SentenceTransformer.py[line:66] - INFO: Load pretrained SentenceTransformer: bge-large-zh
-Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 20.60it/s]
-2024-02-21 02:59:33,807 - loader.py[line:54] - INFO: Loading faiss with AVX2 support.
-2024-02-21 02:59:33,822 - loader.py[line:56] - INFO: Successfully loaded faiss with AVX2 support.
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_community/vectorstores/faiss.py:121: UserWarning: Normalizing L2 is not applicable for metric type: METRIC_INNER_PRODUCT
-  warnings.warn(
-INFO:     127.0.0.1:43526 - "POST /knowledge_base/create_knowledge_base HTTP/1.1" 200 OK
-2024-02-21 02:59:33,843 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/knowledge_base/create_knowledge_base "HTTP/1.1 200 OK"
-2024-02-21 02:59:37,606 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43534 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:59:37,608 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 02:59:37,654 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43534 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:59:37,657 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43534 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 02:59:37,678 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 02:59:42,754 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43548 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:59:42,756 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 02:59:42,805 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43548 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 02:59:42,808 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43548 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 02:59:42,830 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43548 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 02:59:42,842 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-2024-02-21 03:00:31,233 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43800 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:00:31,236 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 03:00:31,390 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43800 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:00:31,392 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43800 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 03:00:31,425 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 03:00:39,018 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43836 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:00:39,021 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 03:00:39,065 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43836 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:00:39,068 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43836 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 03:00:39,090 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:43836 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 03:00:39,101 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-2024-02-21 03:12:20,175 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47084 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:20,177 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 03:12:20,313 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47084 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:20,315 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47084 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 03:12:20,326 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-2024-02-21 03:12:24,004 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47116 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:24,005 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 03:12:24,037 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47116 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:24,039 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47116 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 03:12:24,050 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47116 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 03:12:24,063 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-2024-02-21 03:12:28,958 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47130 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:28,960 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 03:12:28,990 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47130 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:28,992 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47130 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 03:12:29,012 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47130 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 03:12:29,019 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-2024-02-21 03:12:32,794 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47184 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:32,796 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 03:12:32,861 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47184 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:32,864 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47184 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 03:12:32,879 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47184 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 03:12:32,888 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-2024-02-21 03:12:36,431 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47196 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:36,434 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 03:12:36,500 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47196 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:36,502 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47196 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 03:12:36,513 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47196 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 03:12:36,520 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47196 - "POST /chat/knowledge_base_chat HTTP/1.1" 200 OK
-2024-02-21 03:12:36,664 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/chat/knowledge_base_chat "HTTP/1.1 200 OK"
-Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.00s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.00s/it]
-2024-02-21 03:12:45,680 - faiss_cache.py[line:94] - INFO: loading vector store in '天龙八部/vector_store/bge-large-zh' from disk.
-2024-02-21 03:12:45 | INFO | stdout | INFO:     127.0.0.1:35120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-2024-02-21 03:12:45,776 - _client.py[line:1729] - INFO: HTTP Request: POST http://127.0.0.1:20000/v1/chat/completions "HTTP/1.1 200 OK"
-2024-02-21 03:12:45 | INFO | httpx | HTTP Request: POST http://127.0.0.1:20002/worker_generate_stream "HTTP/1.1 200 OK"
-2024-02-21 03:12:48,679 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-input_variables=['question'] messages=[ChatMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], template='从现在开始，你将扮演天龙八部.请根据对方的提问和已知信息来回答问题请尽可能真实地扮演，目标是不被对方识破，无论任何时候都不要承认自己是在扮演，坚持到最后一刻如果已知信息中得不到结论和答案，也可以结合已知信息给出自己合理的推断和结论，实在没有办法再说自己不知道', template_format='jinja2'), role='system'), ChatMessagePromptTemplate(prompt=PromptTemplate(input_variables=['question'], template='请你回答我的问题:\n{{ question }}\n\n', template_format='jinja2'), role='user')]
-INFO:     127.0.0.1:47240 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:48,681 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 03:12:48,711 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47240 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:48,713 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47240 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 03:12:48,733 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47240 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 03:12:48,757 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-2024-02-21 03:12:51,665 - utils.py[line:177] - ERROR: JSONDecodeError: 接口返回json错误： ‘: ping - 2024-02-21 03:12:51.664455
-
-’。错误信息是：Expecting value: line 1 column 1 (char 0)。
-2024-02-21 03:12:56,332 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47310 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:56,334 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-2024-02-21 03:12:56,409 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:20001/list_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47310 - "POST /llm_model/list_running_models HTTP/1.1" 200 OK
-2024-02-21 03:12:56,415 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_running_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47310 - "POST /llm_model/list_config_models HTTP/1.1" 200 OK
-2024-02-21 03:12:56,432 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/llm_model/list_config_models "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47310 - "GET /knowledge_base/list_knowledge_bases HTTP/1.1" 200 OK
-2024-02-21 03:12:56,439 - _client.py[line:1013] - INFO: HTTP Request: GET http://127.0.0.1:7861/knowledge_base/list_knowledge_bases "HTTP/1.1 200 OK"
-INFO:     127.0.0.1:47310 - "POST /chat/knowledge_base_chat HTTP/1.1" 200 OK
-2024-02-21 03:12:56,667 - _client.py[line:1013] - INFO: HTTP Request: POST http://127.0.0.1:7861/chat/knowledge_base_chat "HTTP/1.1 200 OK"
-Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.78s/it]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.78s/it]
-2024-02-21 03:13:07,477 - faiss_cache.py[line:94] - INFO: loading vector store in 'kenny xu/vector_store/bge-large-zh' from disk.
-/root/miniconda3/envs/yijing/lib/python3.11/site-packages/langchain_community/vectorstores/faiss.py:121: UserWarning: Normalizing L2 is not applicable for metric type: METRIC_INNER_PRODUCT
-  warnings.warn(
-2024-02-21 03:13:07 | INFO | stdout | INFO:     127.0.0.1:35244 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-2024-02-21 03:13:07,618 - _client.py[line:1729] - INFO: HTTP Request: POST http://127.0.0.1:20000/v1/chat/completions "HTTP/1.1 200 OK"
-2024-02-21 03:13:07 | INFO | httpx | HTTP Request: POST http://127.0.0.1:20002/worker_generate_stream "HTTP/1.1 200 OK"
-2024-02-21 03:13:11,668 - utils.py[line:177] - ERROR: JSONDecodeError: 接口返回json错误： ‘: ping - 2024-02-21 03:13:11.667509
-
-’。错误信息是：Expecting value: line 1 column 1 (char 0)。
-2024-02-21 03:13:26,668 - utils.py[line:177] - ERROR: JSONDecodeError: 接口返回json错误： ‘: ping - 2024-02-21 03:13:26.667758
-
-’。错误信息是：Expecting value: line 1 column 1 (char 0)。
-2024-02-21 03:22:41,080 - startup.py[line:856] - WARNING: Sending SIGKILL to {}
-2024-02-21 03:22:41,080 - startup.py[line:856] - WARNING: Sending SIGKILL to {'chatglm3-6b-32k': <Process name='model_worker - chatglm3-6b-32k (28282)' pid=28282 parent=28018 started daemon>}
-2024-02-21 03:22:41,081 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='controller (28165)' pid=28165 parent=28018 started daemon>
-2024-02-21 03:22:41,082 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='openai_api (28281)' pid=28281 parent=28018 started daemon>
-2024-02-21 03:22:41,082 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='API Server (28519)' pid=28519 parent=28018 started daemon>
-2024-02-21 03:22:41,087 - startup.py[line:856] - WARNING: Sending SIGKILL to <Process name='WEBUI Server (28644)' pid=28644 parent=28018 started daemon>
-2024-02-21 03:22:41,087 - startup.py[line:867] - INFO: Process status: {}
-2024-02-21 03:22:41,087 - startup.py[line:867] - INFO: Process status: {'chatglm3-6b-32k': <Process name='model_worker - chatglm3-6b-32k (28282)' pid=28282 parent=28018 started daemon>}
-2024-02-21 03:22:41,087 - startup.py[line:867] - INFO: Process status: <Process name='controller (28165)' pid=28165 parent=28018 started daemon>
-2024-02-21 03:22:41,087 - startup.py[line:867] - INFO: Process status: <Process name='openai_api (28281)' pid=28281 parent=28018 started daemon>
-2024-02-21 03:22:41,088 - startup.py[line:867] - INFO: Process status: <Process name='API Server (28519)' pid=28519 parent=28018 started daemon>
-2024-02-21 03:22:41,088 - startup.py[line:867] - INFO: Process status: <Process name='WEBUI Server (28644)' pid=28644 parent=28018 started daemon>
-
-
-==============================Langchain-Chatchat Configuration==============================
-操作系统：Linux-4.19.0-19-amd64-x86_64-with-glibc2.31.
-python版本：3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]
-项目版本：v0.0.1
-langchain版本：0.0.354. fastchat版本：0.2.34
-
-
-当前使用的分词器：ChineseRecursiveTextSplitter
-当前启动的LLM模型：['chatglm3-6b-32k'] @ cpu
-{'device': 'cpu',
- 'host': '0.0.0.0',
- 'infer_turbo': False,
- 'model_path': 'chatglm3-6b-32k',
- 'model_path_exists': True,
- 'port': 20002}
-当前Embbedings模型： bge-large-zh @ cpu
-
-
-服务端运行信息：
-    OpenAI API Server: http://127.0.0.1:20000/v1
-    Chatchat  API  Server: http://127.0.0.1:7861
-    Chatchat WEBUI Server: http://0.0.0.0:8501
-==============================Langchain-Chatchat Configuration==============================
-
-
-Traceback (most recent call last):
-  File "/Langchain-Chatchat/startup.py", line 883, in <module>
-    loop.run_until_complete(start_main_server())
-  File "/root/miniconda3/envs/yijing/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
-    self.run_forever()
-  File "/root/miniconda3/envs/yijing/lib/python3.11/asyncio/base_events.py", line 607, in run_forever
-    self._run_once()
-  File "/root/miniconda3/envs/yijing/lib/python3.11/asyncio/base_events.py", line 1922, in _run_once
-    handle._run()
-  File "/root/miniconda3/envs/yijing/lib/python3.11/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/Langchain-Chatchat/startup.py", line 779, in start_main_server
-    cmd = queue.get() # 收到切换模型的消息
-          ^^^^^^^^^^^
-  File "<string>", line 2, in get
-  File "/root/miniconda3/envs/yijing/lib/python3.11/multiprocessing/managers.py", line 822, in _callmethod
-    kind, result = conn.recv()
-                   ^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/multiprocessing/connection.py", line 250, in recv
-    buf = self._recv_bytes()
-          ^^^^^^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/multiprocessing/connection.py", line 430, in _recv_bytes
-    buf = self._recv(4)
-          ^^^^^^^^^^^^^
-  File "/root/miniconda3/envs/yijing/lib/python3.11/multiprocessing/connection.py", line 395, in _recv
-    chunk = read(handle, remaining)
-            ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Langchain-Chatchat/startup.py", line 609, in f
-    raise KeyboardInterrupt(f"{signalname} received")
-KeyboardInterrupt: SIGTERM received
-/root/miniconda3/envs/yijing/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 2 leaked semaphore objects to clean up at shutdown
+/root/miniconda3/envs/yijing/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
   warnings.warn('resource_tracker: There appear to be %d '
-2024-02-21 03:25:46,407 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:46,408 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:46,408 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:46,516 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:46,517 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:46,518 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:46.518 Uncaught app exception
-Traceback (most recent call last):
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
-    exec(code, module.__dict__)
-  File "/Langchain-Chatchat/webui.py", line 63, in <module>
-    pages[selected_page]["func"](api=api, is_lite=is_lite)
-  File "/Langchain-Chatchat/webui_pages/dialogue/dialogue.py", line 169, in dialogue_page
-    running_models = list(api.list_running_models())
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: 'NoneType' object is not iterable
-2024-02-21 03:25:53,584 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:53,585 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:53,585 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:53,587 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:53,588 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:53,588 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:53.589 Uncaught app exception
-Traceback (most recent call last):
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
-    exec(code, module.__dict__)
-  File "/Langchain-Chatchat/webui.py", line 63, in <module>
-    pages[selected_page]["func"](api=api, is_lite=is_lite)
-  File "/Langchain-Chatchat/webui_pages/dialogue/dialogue.py", line 169, in dialogue_page
-    running_models = list(api.list_running_models())
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: 'NoneType' object is not iterable
-2024-02-21 03:25:56,201 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:56,215 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:56,216 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:56,218 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:56,219 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:56,220 - utils.py[line:95] - ERROR: ConnectError: error when post /llm_model/list_running_models: [Errno 111] Connection refused
-2024-02-21 03:25:56.220 Uncaught app exception
-Traceback (most recent call last):
-  File "/root/miniconda3/envs/yijing/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 534, in _run_script
-    exec(code, module.__dict__)
-  File "/Langchain-Chatchat/webui.py", line 63, in <module>
-    pages[selected_page]["func"](api=api, is_lite=is_lite)
-  File "/Langchain-Chatchat/webui_pages/dialogue/dialogue.py", line 169, in dialogue_page
-    running_models = list(api.list_running_models())
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: 'NoneType' object is not iterable
